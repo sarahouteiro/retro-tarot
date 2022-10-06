@@ -3,10 +3,10 @@ import { GlobalStyle } from './styled'
 
 const App = () => {
   return (
-    <>
+    <div>
       <GlobalStyle/>
       <Router/>
-    </>
+    </div>
   )
 }
 

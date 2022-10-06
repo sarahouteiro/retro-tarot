@@ -17,6 +17,5 @@ const HomePage = () => {
         </>
     )
 }
-//ajustes
 
 export default HomePage

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//ajustes
 export const BotaoStart = styled.button`
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;

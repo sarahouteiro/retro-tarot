@@ -11,7 +11,7 @@ const HomePage = () => {
         <>
             <HomePageDiv>
                 <img src={TitleImage} alt='Retrô Tarot'/>
-                <p>Tire uma carta agora e veja como você pode aproveitar o melhor do seu dia!</p>
+                <p>Tire uma carta agora e veja como você pode aproveitar o melhor o seu dia!</p>
                 <Botao text='Tirar Carta' onClick={() => goToCards(navigate)}/>
             </HomePageDiv>
         </>

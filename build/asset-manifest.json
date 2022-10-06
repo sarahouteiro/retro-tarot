@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/static/js/main.fec2dff4.js",
+    "static/media/titleimage.png": "/static/media/titleimage.98410605c419764fccdd.png",
+    "static/media/errorimage.png": "/static/media/errorimage.b909218cf39c99995674.png",
+    "static/media/cardstitle.png": "/static/media/cardstitle.52a178ee611e9db5ec11.png",
+    "index.html": "/index.html",
+    "main.fec2dff4.js.map": "/static/js/main.fec2dff4.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.fec2dff4.js"
+  ]
+}

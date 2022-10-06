@@ -4,6 +4,7 @@ export const BotaoStart = styled.button`
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 700;
+    font-style: none;
     letter-spacing: 1px;
     padding: 13px 20px 13px;
     outline: 0;

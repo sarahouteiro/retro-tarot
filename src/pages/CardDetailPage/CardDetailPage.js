@@ -5,7 +5,7 @@ import { Container, ImageDiv, TextDiv, BotaoDiv } from './styled'
 import Botao from '../../components/Botao/Botao'
 
 
-const CardDetail = () => {
+const CardDetailPage = () => {
     const location = useLocation()
 
     const navigate = useNavigate()
@@ -30,4 +30,4 @@ const CardDetail = () => {
     )
 }
 
-export default CardDetail
+export default CardDetailPage

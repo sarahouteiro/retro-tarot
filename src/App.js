@@ -1,12 +1,12 @@
 import Router from './routes/Router'
-import { GlobalStyle } from './styled'
+import { GlobalStyle, Container } from './styled'
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <GlobalStyle/>
       <Router/>
-    </div>
+    </Container>
   )
 }
 

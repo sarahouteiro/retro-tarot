@@ -30,6 +30,7 @@ export const Titulo = styled.div`
 export const Logo = styled.img`
     width: 150px;
     height: auto;
+    cursor: pointer;
     @media (max-width: 500px) {
         width: 200px;
     }

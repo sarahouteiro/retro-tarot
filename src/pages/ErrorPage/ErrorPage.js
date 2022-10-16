@@ -8,12 +8,10 @@ const ErrorPage = () => {
     const navigate = useNavigate()
 
     return(
-        <>
-            <Container>
-                <Error src={ErrorImage} alt='Algo deu errado!'/>
-                <Botao text='Voltar para a HomePage' onClick={() => {goToHomePage(navigate)}}/>
-            </Container>
-        </>
+        <Container>
+            <Error src={ErrorImage} alt='Algo deu errado!'/>
+            <Botao text='Voltar para a HomePage' onClick={() => {goToHomePage(navigate)}}/>
+        </Container>
     )
 }
 

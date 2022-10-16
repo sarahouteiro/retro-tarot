@@ -7,7 +7,6 @@ const useGetCards = () => {
 
     useEffect(() => {
         axios.get('tarot.json')
-
         .then((res) => {
             const shuffledArray = shuffleArray(res.data.cards)
             setCards(shuffledArray)

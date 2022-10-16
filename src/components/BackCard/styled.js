@@ -4,12 +4,15 @@ export const Carta = styled.div`
     cursor: pointer;
     transition: transform 1s;
     z-index: 1;
+
     &:hover {
         transform: translateY(-20px) rotateZ(-5deg);
         transition: transform 0.1s;
     }
+
     img {
         width: 100px;
+
         @media (max-width: 500px) {
             width: 165px;
         }

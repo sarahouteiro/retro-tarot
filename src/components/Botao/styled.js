@@ -17,22 +17,23 @@ export const BotaoStart = styled.button`
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    max-height: 70px;
 
-&:after {
-    content: "";
-    background-color: #E54F24;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-    border-radius: 50px;
-}
+    &:after {
+        content: "";
+        background-color: #E54F24;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+        border-radius: 50px;
+    }
 
-&:hover:after {
-    top: 0px;
-    left: 0px;
-}
+    &:hover:after {
+        top: 0px;
+        left: 0px;
+    }
 `

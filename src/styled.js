@@ -10,6 +10,15 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
+    @keyframes shuffleCard {
+        from {
+            transform: scaleX(-0);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+
     @keyframes selectCardBack {
         0% {
             transform: scale(0.1);

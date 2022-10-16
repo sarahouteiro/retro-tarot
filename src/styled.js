@@ -9,20 +9,57 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #F3D253;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    @keyframes cardAnimationUp {
-        from {
-            transform: translateY(0px) rotateZ(0deg); 
+
+    @keyframes selectCardBack {
+        0% {
+            transform: scale(0.1);
         }
-        to {
-            transform: translateY(-20px) rotateZ(-5deg); 
+        90% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scaleX(-0);
+            opacity: 1;
         }
     }
-    @keyframes cardAnimationDown {
+
+    @keyframes selectCardFront {
         from {
-            transform: translateY(-20px) rotateZ(-5deg);
+            transform: scaleX(-0);
         }
         to {
-            transform: translateY(0px) rotateZ(0deg);
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes selectCardModal {
+        from {
+            background-color: transparent;
+            color: transparent;
+        }
+        to {
+            background-color: #E29DC5;
+            color: #000000;
+        }
+    }
+
+    @keyframes selectCardModalBackdrop {
+        from {
+            background-color: transparent;
+            opacity: 0;
+        }
+        to {
+            background-color: #000000;
+            opacity: .3;
+        }
+    }
+
+    @keyframes closeButton {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
         }
     }
 `

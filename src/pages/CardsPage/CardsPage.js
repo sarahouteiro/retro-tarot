@@ -1,16 +1,19 @@
 import { useState } from 'react'
 import BackCard from '../../components/BackCard/BackCard'
-import { goToCardDetail, goToHomePage } from '../../routes/coordinator'
+import { goToHomePage } from '../../routes/coordinator'
 import { useNavigate } from 'react-router-dom'
 import useGetCards from '../../hooks/useGetCards'
-import { Header, Titulo, Logo, Title, Mesa, Cartas } from './styled'
+import { Header, Titulo, Logo, Title, Mesa, Cartas, ShuffleBack, ShuffleFront } from './styled'
 import CardsTitle from '../../assets/cardstitle.png'
 import CleanLogo from '../../assets/cleanlogo.png'
 import CardModal from '../../components/CardModal/CardModal'
+import Botao from '../../components/Botao/Botao'
+import FrontCard from '../../components/FrontCard/FrontCard'
 
 const CardsPage = () => {
     const [ selectedCard, setSelectedCard ] = useState()
     const [ openModal, setOpenModal ] = useState(false)
+    const [ showCards, setShowCards ] = useState(true)
     const { cards } = useGetCards()
     const navigate = useNavigate()
 
@@ -24,11 +27,12 @@ const CardsPage = () => {
         setOpenModal(false)
     }
 
-    const cardsList = cards.map((card) => {
-        return(
-            <BackCard onClick={() => selectCard(card)} key={card.name}/>
-            // <BackCard onClick={() => goToCardDetail(navigate, card)} key={card.name}/>
-        )
+    const backCardsList = cards.map((card, index) => {
+        return <ShuffleBack><BackCard key={index} onClick={() => selectCard(card)}/></ShuffleBack>
+    })
+
+    const frontCardsList = cards.map((card, index) => {
+        return <ShuffleFront><FrontCard key={index} image={card.image}/></ShuffleFront>
     })
 
     return(
@@ -38,11 +42,12 @@ const CardsPage = () => {
                 <Titulo>
                     <Title src={CardsTitle} alt='Concentre-se e clique na carta que escolher'/>
                 </Titulo>
+                <Botao text="Tirar Carta" onClick={() => setShowCards(!showCards)}/>
             </Header>
             <Mesa>
                 {openModal && <CardModal selectedCard={selectedCard} closeModal={clearModal} />}
                 <Cartas>
-                    {cardsList}
+                    {showCards ? frontCardsList : backCardsList}
                 </Cartas>
             </Mesa>
         </>

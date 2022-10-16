@@ -29,11 +29,13 @@ const CardModal = (props) => {
                 {!showBackCard && <FrontCardContainer>
                     <FrontCard image={props.selectedCard.image}/>
                 </FrontCardContainer>}
+
                 <span>
                     <Close onClick={props.closeModal} />
                     <h2>{props.selectedCard.name}</h2>
                     <p>{props.selectedCard.description}</p>
                 </span>
+
             </CardModalBody>
             <CardModalBackdrop onClick={props.closeModal}/>
         </>

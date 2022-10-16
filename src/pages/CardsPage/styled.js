@@ -3,6 +3,8 @@ import styled from "styled-components"
 export const Header = styled.div`
     display: flex;
     padding: 0 80px;
+    align-items: center;
+
     @media (max-width: 500px) {
         flex-direction: column;
         padding: 0;
@@ -52,7 +54,7 @@ export const Mesa = styled.div`
     padding-top: 50px;
     padding-bottom: 20px;
     height: auto;
-    max-width: 86%;
+    max-width: 100%;
     margin: 0 auto;
     border-radius: 10px;
     @media (max-width: 500px) {
@@ -64,11 +66,16 @@ export const Mesa = styled.div`
 export const Cartas = styled.div`
     align-items: center;
     justify-content: center;
-    width: 86%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(39, 25px);
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 20px;
+
+    img {
+        max-width: 100px;
+    }
+
     @media (max-width: 500px) {
         grid-template-columns: repeat(78, 1fr);
         grid-template-rows: 1fr;
@@ -78,8 +85,30 @@ export const Cartas = styled.div`
         justify-content: flex-start;
         overflow-x: scroll;
         padding-top: 25px;
+
         &:first-child {
             padding-left: 25px;
         }
+    }
+`
+
+export const ShuffleBack = styled.div`
+    animation: shuffleCard;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+`
+
+export const ShuffleFront = styled.div`
+    animation: shuffleCard;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+
+    &:hover {
+        z-index: 2;
     }
 `

@@ -52,14 +52,19 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <a id="Imagens"></a>
 ## 🖼️ Imagens
+<img width="398" alt="Screen Shot 2022-10-16 at 21 04 48" src="">
 
-| Homepage | Cards Page |
+| Homepage | Página das Cartas |
 |---|---|
-| ![Screen Shot 2022-08-21 at 00 35 19](https://user-images.githubusercontent.com/104728985/194324092-40b14e27-5d2b-4002-a378-dce58c0c7082.png) | ![Screen Shot 2022-08-21 at 00 36 05](https://user-images.githubusercontent.com/104728985/194324324-29ef7288-b4ff-4619-beea-38ea6d09275c.png) |
+| ![Screen Shot 2022-08-21 at 00 35 19](https://user-images.githubusercontent.com/104728985/196064253-1f15216b-b50f-4192-8dd8-ef27b69bde97.png) | ![Screen Shot 2022-08-21 at 00 36 05](https://user-images.githubusercontent.com/104728985/196064295-9fcc2291-bf49-4bcb-8749-96fd07f14f42.png) |
 
-| Detail Page | Error Page |
+| Cartas Embaralhadas| Detalhes da Carta |
 |---|---|
-| ![Screen Shot 2022-08-21 at 00 36 50](https://user-images.githubusercontent.com/104728985/194324634-d848669b-ea37-45c2-8e3c-5152786db331.png) | ![Screen Shot 2022-08-21 at 00 38 21](https://user-images.githubusercontent.com/104728985/194325040-c641b1c5-a03b-49be-b0ca-d782054dab4d.png) |
+| ![Screen Shot 2022-08-21 at 00 36 50](https://user-images.githubusercontent.com/104728985/196064326-a664d169-9153-46eb-bcab-dd522aef6643.png) | ![Screen Shot 2022-08-21 at 00 38 21](https://user-images.githubusercontent.com/104728985/196064437-6ad96d12-1ae5-45c7-9370-6be29e3b4d68.png) |
+
+| Homepage - Responsivo | Página das Cartas - Responsivo | Cartas Embaralhadas - Responsivo | Detalhes da Carta - Responsivo |
+|---|---|---|---|
+| ![Screen Shot 2022-08-21 at 00 36 50](https://user-images.githubusercontent.com/104728985/196065422-1f8b0155-6ebd-462d-ad8b-8104fef50e06.png) | ![Screen Shot 2022-08-21 at 00 38 21](https://user-images.githubusercontent.com/104728985/196065451-4646316e-7658-49fa-8aae-95a54b703962.png) | ![Screen Shot 2022-08-21 at 00 36 50](https://user-images.githubusercontent.com/104728985/196065657-d29890db-f592-4a22-9b4d-2a8b036af515.png) | ![Screen Shot 2022-08-21 at 00 38 21](https://user-images.githubusercontent.com/104728985/196065547-ecfb76e5-6666-4e3d-b33c-594399af3fbd.png) |
 
 <a id="Licença"></a>
 ## 📝 Licença

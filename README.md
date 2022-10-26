@@ -52,7 +52,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <a id="Imagens"></a>
 ## 🖼️ Imagens
-<img width="398" alt="Screen Shot 2022-10-16 at 21 04 48" src="">
 
 | Homepage | Página das Cartas |
 |---|---|

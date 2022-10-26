@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-import shuffleArray from "../helpers/shuffleArray"
 
 const useGetCards = () => {
     const [ cards, setCards ] = useState([])
@@ -8,8 +7,7 @@ const useGetCards = () => {
     useEffect(() => {
         axios.get('tarot.json')
         .then((res) => {
-            const shuffledArray = shuffleArray(res.data.cards)
-            setCards(shuffledArray)
+            setCards(res.data.cards)
         })
         .catch((err) => {
             console.log(err)

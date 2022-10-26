@@ -9,6 +9,7 @@ import CleanLogo from '../../assets/cleanlogo.png'
 import CardModal from '../../components/CardModal/CardModal'
 import Botao from '../../components/Botao/Botao'
 import FrontCard from '../../components/FrontCard/FrontCard'
+import shuffleArray from "../../helpers/shuffleArray"
 
 const CardsPage = () => {
     const [ selectedCard, setSelectedCard ] = useState()
@@ -16,6 +17,8 @@ const CardsPage = () => {
     const [ showCards, setShowCards ] = useState(true)
     const { cards } = useGetCards()
     const navigate = useNavigate()
+
+    const cardShuffled = shuffleArray(cards)
 
     const selectCard = (card) => {
         setSelectedCard(card)
@@ -27,11 +30,11 @@ const CardsPage = () => {
         setOpenModal(false)
     }
 
-    const backCardsList = cards.map((card, index) => {
+    const backCardsList = cardShuffled.map((card, index) => {
         return <ShuffleBack><BackCard key={index} onClick={() => selectCard(card)}/></ShuffleBack>
     })
 
-    const frontCardsList = cards.map((card, index) => {
+    const frontCardsList = cardShuffled.map((card, index) => {
         return <ShuffleFront><FrontCard key={index} image={card.image}/></ShuffleFront>
     })
 
